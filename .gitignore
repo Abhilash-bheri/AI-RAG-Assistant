@@ -1,0 +1,7 @@
+venv/
+.env
+__pycache__/
+.faiss/
+.ipynb_checkpoints/
+readme.md
+uploaded.pdf
