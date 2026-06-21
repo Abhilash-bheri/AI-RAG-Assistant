@@ -28,6 +28,7 @@ class Rag:
         vectore_store=FAISS.from_documents(documents=chunks,embedding=embs_model)
         self.retriver=vectore_store.as_retriever()
         return True
+    
     def retrive(self,query):
         docs=self.retriver.invoke(query)
         return self.llm(query,"\n\n".join(doc.page_content for doc in docs))
