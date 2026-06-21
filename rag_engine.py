@@ -32,7 +32,6 @@ class Rag:
         return self.llm(query,"\n\n".join(doc.page_content for doc in docs))
 
 
-    def llm(query,context):
-        
+   
 
 
