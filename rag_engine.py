@@ -57,6 +57,7 @@ class Rag:
         """
 
         response = llm.invoke(prompt)
+        
         return response.content
         
 
