@@ -17,7 +17,10 @@ class Rag:
         if type=="pdf":
             loader=PyPDFLoader(data)
         if type=="web":
-            loader=WebBaseLoader(f"{data}")
+            #loader=WebBaseLoader(f"{data}")
+            clean_url = data.replace("https://", "").replace("http://", "")
+            jina_url = f"https://r.jina.ai/http://{clean_url}"
+            loader = WebBaseLoader(jina_url)
         documents=loader.load()
         chunks_model=RecursiveCharacterTextSplitter(chunk_size=1000,chunk_overlap=200)
         chunks=chunks_model.split_documents(documents)
