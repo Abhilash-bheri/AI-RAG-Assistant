@@ -6,6 +6,10 @@ RagMaster AI is a Retrieval-Augmented Generation (RAG) application that allows u
 
 https://ragmaster-ai.streamlit.app
 
+## 🎥 Demo Video
+
+https://github.com/user-attachments/assets/fd344074-55eb-4e67-9d5a-39281d3c4b14
+
 ## ✨ Features
 
 * Chat with PDF documents
