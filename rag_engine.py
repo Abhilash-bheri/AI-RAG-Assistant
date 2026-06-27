@@ -10,7 +10,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 
 class Rag:
-    def _init_(self):
+    def __init__(self):
         self.retriver=None
 
     def ingestion(self,data,type):
